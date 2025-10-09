@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "eslint-config-prettier": "^10.1.8"
+  },
+  "scripts": {
+    "format": "prettier . --cache --write",
+    "format:check": "prettier . --cache --check",
+    "lint": "pnpm -r run lint"
+  }
+}

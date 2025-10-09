@@ -1,0 +1,26 @@
+{
+    "name": "fastify-ts",
+    "type": "module",
+    "private": true,
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "start": "node dist/server.js",
+        "build": "tsup src/server.ts --format esm --sourcemap --minify --dts --out-dir dist",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint . --ext .ts,.js"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.36.0",
+        "eslint": "^9.36.0",
+        "tsup": "^8.5.0",
+        "tsx": "^4.20.6",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.45.0"
+    },
+    "dependencies": {
+        "fastify": "^5.6.1"
+    }
+}
