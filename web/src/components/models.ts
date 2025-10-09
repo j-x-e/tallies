@@ -5,4 +5,5 @@ export interface Todo {
 
 export interface Meta {
   totalCount: number;
+  totalcount2?: number;
 }
