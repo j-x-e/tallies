@@ -1,0 +1,2 @@
+import o from"fastify";var r=o({logger:!0});r.get("/",async()=>({hello:"world"}));var e=async()=>{try{await r.listen({port:3e3})}catch(t){r.log.error(t),process.exit(1)}};e();
+//# sourceMappingURL=server.js.map
